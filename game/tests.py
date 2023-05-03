@@ -24,7 +24,7 @@ class BlogTests(TestCase):
         actual_owner = str(game.owner)
         actual_title = str(game.title)
         actual_description = str(game.description)
-        actual_rating = str(game.rating)
+        actual_rating = game.rating
         self.assertEqual(actual_owner, 'testuser1')
         self.assertEqual(actual_title, 'test game')
         self.assertEqual(actual_description, 'game description')
